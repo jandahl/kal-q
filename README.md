@@ -2,14 +2,14 @@
 
 A Kalaallisut word arcade. Catch rising roots and affixes, then place a pair in the same lane to form a real word.
 
-## Play
+**Play:** [jandahl.github.io/kal-q](https://jandahl.github.io/kal-q/)
+
+## Play locally
 
 ```bash
 npm install
 npm run dev
 ```
-
-Open the printed local URL. `npm run build` produces the production bundle.
 
 ## Controls
 
@@ -22,6 +22,10 @@ Open the printed local URL. `npm run build` produces the production bundle.
 | Pause | P or Esc | Pause |
 
 Gold tiles are roots. Teal tiles are affixes. They only clear if the pair is linguistically valid **and** stacked in the same lane.
+
+## Deploy
+
+GitHub Pages is built by [`.github/workflows/pages.yml`](.github/workflows/pages.yml) on every push to `main` (`npm run build:pages`). The site is a static export at `/kal-q/` — not a `gh-pages` branch, and not a path inside retr-oq.
 
 ## Stack
 
